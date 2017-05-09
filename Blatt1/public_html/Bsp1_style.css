@@ -1,5 +1,4 @@
 /*START:type_style */
-
 body{
   width:960px;
   margin:15px auto;
@@ -18,7 +17,6 @@ section#logo{
   float: right;
   width: 200px;
   padding-right: 20px;
-  
 }
 /*END:type_style */
 
@@ -48,13 +46,16 @@ section#posts{
   width: 74%;
 }
 
+section#posts footer{
+    font-style: italic;
+}
 
 section#posts aside{
   float: right;
   width: 35%;
   margin-left: 5%;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 40px;
 }
 /*END:posts_style */
 
