@@ -10,12 +10,12 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <header><h3>Eigenschaften des navigator-Objekts</h3></header>
+        <header><h1>Eigenschaften des navigator-Objekts</h1></header>
         <script type="text/javascript">
             function objProperties(myObject) {
                 var out = new Array();
                 for( property in myObject ) {
-                    out.push(property + ":" + myObject[property]); 
+                    out.push("<b>" + property + "</b>" + ":" + myObject[property]); 
                 }
                 return out;
             }

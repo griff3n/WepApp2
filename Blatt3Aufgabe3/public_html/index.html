@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Schiffe versenken mit Objekten</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <header><h3>Schiffe versenken und fliegen lassen<br></h3></header>
+        <script type="text/javascript">
+            function Schiff(name, model, Person) {
+                this.name = name;
+                this.model = model;
+                this.kapitan = Person;
+                this.tiefe = 0;
+                this.ausgabe = function() {
+                    return "<b>Schiffsname</b>: " + this.name + "<br><b>Schiffsmodell</b>: " + this.model + "<br>" + this.kapitan.ausgabe();
+                };
+                this.tiefenveranderung = function(tiefe) {
+                    this.tiefe += tiefe;
+                    return this.name + "=>Tiefenveränderung " + tiefe + " Meter -> Neue Tiefe: " + this.tiefe + " Meter<br>";
+                };
+            }
+            function Person(name, male, nationalitat) {
+                this.name = name;
+                this.male = male;
+                this.nationalitat = nationalitat;
+                this.ausgabe = function() {
+                    return  "<b>Kapitän</b>: " + this.name + ", " + this.male +"<br><b>Nationalität</b>: " + this.nationalitat +"<br><br>";
+                };
+            }
+            bar = new Person("Käptn Blauär", "männlich", "Bärig");
+            elvira = new Schiff("Elvira", "Segler", bar);
+            wagner = new Person("Richerd Wagner", "männlich", "Deutsch");
+            hollender = new Schiff("Fliegender Hollender", "Gruselschiff",wagner);
+            document.write(elvira.ausgabe());
+            document.write(hollender.ausgabe());
+            document.write("<b>Beide Schiffe sind auf hoher See:<br></b>");
+            document.write(elvira.tiefenveranderung(50));
+            document.write(hollender.tiefenveranderung(1000));
+            document.write(elvira.tiefenveranderung(200));
+            document.write(hollender.tiefenveranderung(-500));
+            document.write(elvira.tiefenveranderung(-100));
+            document.write(elvira.tiefenveranderung(-150));
+            document.write(hollender.tiefenveranderung(400));
+            document.write(hollender.tiefenveranderung(-1000));
+        </script>
+    </body>
+</html>

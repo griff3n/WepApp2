@@ -10,21 +10,21 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <header><h3>Anpassungen an Browsereinstellungen</h3></header>
+        <header><h1>Anpassungen an Browsereinstellungen</h1></header>
         <script type="text/javascript">
             appName = navigator.appName;
             appVersion = navigator.appVersion;
             lang = navigator.language;
-            document.write("appName: ",appName,"<br>");
-            document.write("appVersion: ", appVersion,"<br>");
+            document.write("<b>appName</b>: ",appName,"<br><br>");
+            document.write("<b>appVersion</b>: ", appVersion,"<br><br>");
             if(lang === "de" || lang === "de-DE") {
-                document.write("userLanguage: ", lang,"<br>");
+                document.write("<b>userLanguage</b>: ", lang,"<br><br>");
                 alert("Hallo, Sie nutzen " + appName + " mit der Version " + appVersion + " und die Sprache " + lang + "\n");
             } else if(lang === "en" || lang === "en-US") {
-                document.write("userLanguage: ", lang,"<br>");
+                document.write("<b>userLanguage</b>: ", lang,"<br><br>");
                 alert("Hello, you are using " + appName + " with the version " + appVersion + " and the language " + lang + "\n");
             } else {
-                document.write("userLanguage: Unkown Language<br>");
+                document.write("<b>userLanguage</b>: Unkown Language<br><br>");
                 alert("Unkown Language\n");
             }
         </script>
