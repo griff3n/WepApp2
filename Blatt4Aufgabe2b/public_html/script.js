@@ -13,7 +13,7 @@ function umrechnen() {
     var select = getSelection();
     switch (select) {
         case 0:
-            result = input;
+            result = input * 1;
             break;
         case 1:
             result = input * k;
@@ -44,4 +44,5 @@ function getSelection() {
     return -1;
 }
 
-document.getElementById("umrechnen").onclick = umrechnen;
+document.getElementById("input").onchange = umrechnen;
+document.getElementById("list").onchange = umrechnen;

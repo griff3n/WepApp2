@@ -1,0 +1,11 @@
+#stage {
+    border: 1px solid #000;
+}
+
+#buffer {
+    display: none;
+}
+
+.clearer{
+    clear: both;
+}
