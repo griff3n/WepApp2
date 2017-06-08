@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formularauswertung</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <header id="page_header">
+            <h1>Anmeldeformular</h1>
+        </header>
+        <form name="anmeldeform" action="http://www.hodor.de" method="get" onsubmit="return checkform(this);" onreset="return del();">
+            <table width="500" cellspacing="0" cellpadding="5" border="0">
+                <tr>
+                    <td>Anrede:</td>
+                    <td>
+                        <input type="radio" name="anrede" id="f" value="Frau">Frau 
+                        <input type="radio" name="anrede" id="m" value="Mann">Herr
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nachname:</td>
+                    <td><input name="nachname" size="70" maxlength="70" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Vorname:</td>
+                    <td><input name="vorname" size="70" maxlength="70" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Telefonnummer:</td>
+                    <td><input name="telnr" size="15" maxlength="15" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Straße:</td>
+                    <td><input name="str" size="70" maxlength="70" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Postleitzahl:</td>
+                    <td><input name="plz" size="5" maxlength="5" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Ort:</td>
+                    <td><input name="ort" size="70" maxlength="70" type="text"></td>
+                </tr>
+                <tr>
+                    <td>E-Mail-Adresse</td>
+                    <td><input name="email" size="70" maxlength="70" type="text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p align="center">
+                            <input type="submit" value="Anmelden">
+                            <input type="reset" value="Zur&uuml;cksetzen">
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

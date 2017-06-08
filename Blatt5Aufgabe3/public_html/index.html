@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+    <head>
+        <title>JavaSript und DOM</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Kapitel 1</h1>
+        Hier steht der Text von Kapitel 1
+        <h2>Kapitel 1.1</h2>
+        Hier steht der Text von Kapitel 1.1
+        <h3>Kapitel 1.1.1</h3>
+        Hier steht der Text von Kapitel 1.1.1
+        <h1>Kapitel 2</h1>
+        Hier steht der Text von Kapitel 2 
+        <h2>Kapitel 2.1</h2>
+        Hier steht der Text von Kapitel 2.1
+        <h3>Kapitel 2.2</h3>
+        Hier steht der Text von Kapitel 2.2
+        <h4>Kapitel 2.3</h4>
+        Hier steht der Text von Kapitel 2.3 
+        
+        <script type="text/javascript">
+            var p = document.body.firstChild.cloneNode(true);
+            document.body.appendChild(p);
+        </script>
+    </body>
+</html>
