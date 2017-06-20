@@ -1,0 +1,4 @@
+Nicht eingehaltene REST-Prinzipien:
+
+Zustandslos
+HATEOAS
